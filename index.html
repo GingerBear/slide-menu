@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+  <title>Slide Menu Demo</title>
+  <link rel="stylesheet" href="slide-menu.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="body-wrapper">
+    This is the main body.
+    <button id="slide-menu-button">Open Slide Menu</button>
+  </div>
+
+  <div id="slide-menu">
+
+    <ul class="main-menu">
+      <li class="has-sub-menu" data-menu-id="0">
+        <a href="#main-menu-0">Main Menu 0</a>
+      </li>
+      <li class="has-sub-menu" data-menu-id="1">
+        <a href="#main-menu-1">Main Menu 1</a>
+      </li>
+      <li class="has-sub-menu" data-menu-id="2">
+        <a href="#main-menu-2">Main Menu 2</a>
+      </li>
+      <li>
+        <a href="http://gxding.com">Direct Link</a>
+      </li>
+    </ul>
+
+    <div class="sub-menus">
+      <div class="sub-menu" data-parent-menu-id="0">
+        <h2><a href="#" class="back-to-main">< Main Menu 0</a></h2>
+        <div class="sub-menu-content">
+          <ul class="sub-section">
+            <li><a href="#sub-menu-0">Sub Menu 0</a></li>
+            <li><a href="#sub-menu-1">Sub Menu 1</a></li>
+            <li><a href="#sub-menu-2">Sub Menu 2</a></li>
+            <li><a href="#sub-menu-3">Sub Menu 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-menu" data-parent-menu-id="1">
+        <h2><a href="#" class="back-to-main">< Main Menu 1</a></h2>
+        <div class="sub-menu-content">
+          <ul class="sub-section">
+            <li><a href="#sub-menu-0">Sub Menu 0</a></li>
+            <li><a href="#sub-menu-1">Sub Menu 1</a></li>
+            <li><a href="#sub-menu-2">Sub Menu 2</a></li>
+            <li><a href="#sub-menu-3">Sub Menu 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="sub-menu" data-parent-menu-id="2">
+        <h2><a href="#" class="back-to-main">< Main Menu 2</a></h2>
+        <div class="sub-menu-content">
+          <ul class="sub-section">
+            <li><a href="#sub-menu-0">Sub Menu 0</a></li>
+            <li><a href="#sub-menu-1">Sub Menu 1</a></li>
+            <li><a href="#sub-menu-2">Sub Menu 2</a></li>
+            <li><a href="#sub-menu-3">Sub Menu 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="slide-menu.js"></script>
+  </div>
+</body>
+</html>
